@@ -1,0 +1,300 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <title>SIKERMA UNJ</title>
+  <!-- Favicon-->
+  <link rel="icon" type="image/x-icon" href="https://sikerma.unj.ac.id/img/icon_unj.png" />
+  <!-- Font Awesome icons (free version)-->
+  <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
+  <!-- Google fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
+
+  
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs5/dt-1.11.3/r-2.2.9/datatables.min.css" />
+
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  
+  <link rel="stylesheet" href="https://sikerma.unj.ac.id/vendor/jquery-ui-1.12.1/jquery-ui.min.css">
+  <script src="https://sikerma.unj.ac.id/vendor/jquery/jquery.min.js"></script>
+
+  <!-- SimpleLightbox plugin CSS-->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
+  <!-- Core theme CSS (includes Bootstrap)-->
+  <link href="https://sikerma.unj.ac.id/css/landing.css" rel="stylesheet" />
+
+  <style>
+    #table-info-kerjasama th {
+      background-color: #006f45 !important;
+    }
+
+  </style>
+</head>
+
+<body id="page-top">
+  <!-- Navigation-->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+    <div class="container px-4 px-lg-5">
+      <a class="navbar-brand" href="#page-top">SIKERMA - UNJ</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+        aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ms-auto my-2 my-lg-0">
+          <li class="nav-item"><a class="nav-link" href="#stats">Statistik</a></li>
+          <li class="nav-item"><a class="nav-link" href="#info">Info Kerjasama</a></li>
+          <li class="nav-item"><a class="nav-link" href="#galeri">Galeri</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Masthead-->
+  <header class="masthead">
+    <div class="container px-4 px-lg-5 h-100">
+      <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
+        <div class="col-lg-8 align-self-end">
+          <img src="https://sikerma.unj.ac.id/img/logo_unj_white.png" class="mb-2" alt="UNJ" height="200">
+          <h1 class="text-white font-weight-bold">Sistem Informasi Kerjasama<br>Universitas Negeri Jakarta</h1>
+          <hr class="divider" />
+        </div>
+        <div class="col-lg-8 align-self-baseline">
+          
+                      <a class="btn btn-primary btn-xl" href="login.html"><i class="fas fa-fw fa-sign-in-alt"></i> masuk</a>
+                  </div>
+      </div>
+    </div>
+  </header>
+  <!-- About-->
+  <section class="page-section bg-primary" id="stats">
+    <div class="container px-4 px-lg-5">
+      <div class="row gx-4 gx-lg-5 justify-content-center">
+        <div class="col-lg-3 text-center">
+          <h5 class="title text-white-75">Memorandum of Understanding</h5>
+          <h4 class="value text-white">
+                          152                      </h4>
+        </div>
+        <div class="col-lg-3 text-center">
+          <h5 class="title text-white-75">Memorandum of Aggreement</h5>
+          <h4 class="value text-white">
+            848          </h4>
+        </div>
+        <div class="col-lg-3 text-center">
+          <h5 class="title text-white-75">Implementation Arrangement</h5>
+          <h4 class="value text-white">
+            238          </h4>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+  <!-- Services-->
+  <section class="page-section" id="info">
+    <div class="container px-4 px-lg-5">
+      <h2 class="text-center mt-0">Info Kerjasama</h2>
+      <hr class="divider" />
+      <div class="row gx-4 gx-lg-5">
+        <div class="col">
+          <table id="table-info-kerjasama" class="table table-success table-bordered" style="width: 100%">
+            <thead class="text-white">
+              <tr>
+                <th>No.</th>
+                <th>Jenis Kerjasama</th>
+                <th>Judul Kerjasama</th>
+                <th>Unit Pengaju</th>
+                <th>Status</th>
+                <th>Detail</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Portfolio-->
+  <div class="page-section" id="galeri">
+
+    <div id="portfolio">
+      <div class="container-fluid p-0">
+        <div class="row g-0">
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="https://sikerma.unj.ac.id/img/portfolio/fullsize/1.jpg" title="Project Name">
+              <img class="img-fluid" src="https://sikerma.unj.ac.id/img/portfolio/thumbnails/1.jpg" alt="..." />
+              <div class="portfolio-box-caption">
+                <div class="project-category text-white-50">Category</div>
+                <div class="project-name">Project Name</div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="https://sikerma.unj.ac.id/img/portfolio/fullsize/2.jpg" title="Project Name">
+              <img class="img-fluid" src="https://sikerma.unj.ac.id/img/portfolio/thumbnails/2.jpg" alt="..." />
+              <div class="portfolio-box-caption">
+                <div class="project-category text-white-50">Category</div>
+                <div class="project-name">Project Name</div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="https://sikerma.unj.ac.id/img/portfolio/fullsize/3.jpg" title="Project Name">
+              <img class="img-fluid" src="https://sikerma.unj.ac.id/img/portfolio/thumbnails/3.jpg" alt="..." />
+              <div class="portfolio-box-caption">
+                <div class="project-category text-white-50">Category</div>
+                <div class="project-name">Project Name</div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="https://sikerma.unj.ac.id/img/portfolio/fullsize/4.jpg" title="Project Name">
+              <img class="img-fluid" src="https://sikerma.unj.ac.id/img/portfolio/thumbnails/4.jpg" alt="..." />
+              <div class="portfolio-box-caption">
+                <div class="project-category text-white-50">Category</div>
+                <div class="project-name">Project Name</div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="https://sikerma.unj.ac.id/img/portfolio/fullsize/5.jpg" title="Project Name">
+              <img class="img-fluid" src="https://sikerma.unj.ac.id/img/portfolio/thumbnails/5.jpg" alt="..." />
+              <div class="portfolio-box-caption">
+                <div class="project-category text-white-50">Category</div>
+                <div class="project-name">Project Name</div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="https://sikerma.unj.ac.id/img/portfolio/fullsize/6.jpg" title="Project Name">
+              <img class="img-fluid" src="https://sikerma.unj.ac.id/img/portfolio/thumbnails/6.jpg" alt="..." />
+              <div class="portfolio-box-caption p-3">
+                <div class="project-category text-white-50">Category</div>
+                <div class="project-name">Project Name</div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="modal-detail-kerjasama" data-bs-backdrop="static" data-bs-keyboard="false">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="d-flex justify-content-end">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="main-content"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer-->
+  <footer class="bg-green-unj bt-gold py-3">
+    <div class="container d-flex align-items-center justify-content-between px-4 px-lg-5">
+      <div class="small text-white">Copyright &copy; 2021 - 2023 - Universitas Negeri Jakarta</div>
+      <div class="small text-white"><a href="https://sikerma.unj.ac.id/credits">Special Thanks</a></div>
+    </div>
+  </footer>
+  <!-- Bootstrap core JS-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- SimpleLightbox plugin JS-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
+  <!-- Core theme JS-->
+  <script src="https://sikerma.unj.ac.id/js/landing.js"></script>
+
+  
+  <script type="text/javascript" src="https://cdn.datatables.net/v/bs5/dt-1.11.3/r-2.2.9/datatables.min.js"></script>
+
+  <script>
+    var table = $('#table-info-kerjasama').DataTable({
+      responsive: true,
+      processing: true,
+      serverSide: true,
+      language: {
+        processing: '<i class="fa fa-spinner fa-spin fa-2x fa-fw"></i>'
+      },
+      ajax: {
+        url: "https://sikerma.unj.ac.id/info-kerjasama",
+        type: 'get',
+      },
+      columns: [{
+          data: 'DT_RowIndex',
+          className: 'text-center'
+        },
+        {
+          data: 'jenis_dok',
+        },
+        {
+          data: 'nama',
+        },
+        {
+          data: 'nama_satker',
+        },
+        {
+          data: 'status',
+        },
+        {
+          data: 'action',
+          orderable: false,
+          searchable: false,
+        },
+      ]
+    });
+
+    $('#modal-detail-kerjasama').on('show.bs.modal', function(event) {
+      var button = $(event.relatedTarget);
+      var id = button.data('id');
+
+      var modal = $(this);
+      $.ajax({
+        url: "https://sikerma.unj.ac.id/detail-kerjasama",
+        type: 'GET',
+        data: {
+          'id': id
+        },
+        success: function(data) {
+          modal.find('.main-content').html(data);
+        },
+        error: function(data) {
+          console.log(data);
+        }
+      });
+
+    });
+    // var detail_modal = document.getElementById('modal-detail-kerjasama');
+
+    // detail_modal.addEventListener('show.bs.modal', function(event) {
+    //   var button = event.relatedTarget
+    //   var id = button.getAttribute('data-id')
+
+    //   var content = detail_modal.querySelector('.modal-body');
+
+    //   $.ajax({
+    //     url: "https://sikerma.unj.ac.id/detail-kerjasama",
+    //     type: 'GET',
+    //     data: {
+    //       'id': id
+    //     },
+    //     success: function(data) {
+    //       content.value = data;
+    //     },
+    //     error: function(data) {
+    //       console.log(data);
+    //     }
+    //   });
+
+    // })
+  </script>
+
+</body>
+
+</html>
